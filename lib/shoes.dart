@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:shoes_store/pay_now_screen.dart';
 
 class Shoes extends StatefulWidget {
   final String image;
@@ -199,18 +200,33 @@ class _ShoesState extends State<Shoes> {
                           SizedBox(height: 60),
                           FadeInUp(
                             duration: Duration(milliseconds: 1500),
-                            child: Container(
-                              height: 50,
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(15),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  'Buy Now',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => BuyNowScreen(
+                                      image: widget.image,
+                                      name: widget.name,
+                                      tag: widget.tag,
+                                      size: '42',
+                                    ),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                height: 50,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    'Buy Now',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
