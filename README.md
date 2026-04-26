@@ -36,8 +36,8 @@ A modern and clean **Shoes Store UI** built with Flutter. This project showcases
 ## 📱 Screenshots
 
 ![Home Screen](screenshots/home_screen.jpeg)
-![Detail Screen](screenshots/detail_screen.jpeg)
-![Checkout Screen](screenshots/checkout_screen.jpeg)
+![Detail Screen](screenshots/detail_screen.jpeg) ![Checkout Screen](screenshots/checkout_screen.jpeg)
+
 
 
 ---
