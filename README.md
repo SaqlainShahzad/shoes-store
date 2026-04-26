@@ -61,16 +61,6 @@ A modern and clean **Shoes Store UI** built with Flutter. This project showcases
 
 ---
 
-## 🚀 Future Improvements
-
-* Backend integration (Firebase / API)
-* Cart functionality
-* Payment gateway (Stripe)
-* Search & filters
-* State management (Provider / Riverpod)
-
----
-
 ## 📌 Purpose
 
 This project is built for practicing **Flutter UI development** and understanding how real-world e-commerce apps are structured.
